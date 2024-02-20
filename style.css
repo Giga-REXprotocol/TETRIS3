@@ -1,0 +1,54 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Merienda");
+svg {
+  height: 200vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -3; /*描画を一番下に*/
+}
+
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  margin: auto;
+  z-index: -1;
+}
+
+/* Default Styling */
+body {
+  margin: auto;
+  text-align: center;
+  font-family: "Merienda", cursive;
+  background: #cee4ae;
+  overflow: hidden;
+}
+
+#particles-js {
+  margin: auto;
+  position: fixed; /*描画固定*/
+  z-index: -1; /*描画を一番下に*/
+  width: 100%;
+  height: 100%;
+  background-size: auto;
+}
+
+#wrapper {
+  position: relative; /*描画を#particles-jsよりも上にするためposition:relative;を指定*/
+  z-index: 1; /*z-indexの数字を大きくすることで描画を#particles-jsよりも上に*/
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  color: rgb(57, 105, 211);
+  text-align: center;
+}
+
+div.textover {
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
